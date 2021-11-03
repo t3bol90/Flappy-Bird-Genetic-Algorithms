@@ -162,11 +162,11 @@ def main():
     else:
         soundExt = '.ogg'
 
-    SOUNDS['die']    = pygame.mixer.Sound('assets/audio/die' + soundExt)
-    SOUNDS['hit']    = pygame.mixer.Sound('assets/audio/hit' + soundExt)
-    SOUNDS['point']  = pygame.mixer.Sound('assets/audio/point' + soundExt)
-    SOUNDS['swoosh'] = pygame.mixer.Sound('assets/audio/swoosh' + soundExt)
-    SOUNDS['wing']   = pygame.mixer.Sound('assets/audio/wing' + soundExt)
+    # SOUNDS['die']    = pygame.mixer.Sound('assets/audio/die' + soundExt)
+    # SOUNDS['hit']    = pygame.mixer.Sound('assets/audio/hit' + soundExt)
+    # SOUNDS['point']  = pygame.mixer.Sound('assets/audio/point' + soundExt)
+    # SOUNDS['swoosh'] = pygame.mixer.Sound('assets/audio/swoosh' + soundExt)
+    # SOUNDS['wing']   = pygame.mixer.Sound('assets/audio/wing' + soundExt)
 
     while True:
         # select random background sprites
