@@ -7,9 +7,14 @@ from pygame.locals import *
 
 import numpy as np
 
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+
+
 from keras.models import Sequential
 from keras.layers import Dense, Activation
-from keras.optimizers import SGD
+# from keras.optimizers import SGD
+from tensorflow.keras.optimizers import SGD
 
 FPS = 30
 SCREENWIDTH  = 288.0
@@ -70,9 +75,9 @@ def predict_action(height, dist, pipe_height, model_num):
 # Initialize all models
 for i in range(total_models):
     model = Sequential()
-    model.add(Dense(output_dim=7, input_dim=3))
+    model.add(Dense(7, input_dim=3))
     model.add(Activation("sigmoid"))
-    model.add(Dense(output_dim=1))
+    model.add(Dense(1))
     model.add(Activation("sigmoid"))
 
     sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
