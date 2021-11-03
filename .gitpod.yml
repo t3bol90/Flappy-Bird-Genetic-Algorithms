@@ -1,4 +1,4 @@
-image: gitpod/workspace-full-vnc
+image: continuumio/anaconda3
 ports:
   - port: 5900
     onOpen: ignore
